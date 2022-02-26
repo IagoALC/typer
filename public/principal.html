@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Typer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="d-flex justify-content-center mb-5 mt-3" style="font-family: 'Courier New', Courier, monospace">
+            TYPER - Jogo de Digitação
+        </h1>
+        <p id="objetivo" style="font-family: 'Courier New', Courier, monospace;text-align: center;">Uma linda frase</p>
+        <ul style="list-style: none; text-align: center">
+            <li><i class="fa-solid fa-clock icones"></i></i><span id="tempo">10</span> segundos</li>
+        </ul>
+        <textarea id="texto" class="form-control" rows="10" cols="50" style="resize: none"></textarea>
+        <p><small>OBS.: Clique no campo para iniciar o jogo</small></p>
+        <ul style="list-style: none; text-align: center">
+            <li><i class="fa-solid fa-a icones"></i><span id="texto_quantidade_caracteres">0</span> caracteres</li>
+            <li><i class="fa-solid fa-align-justify icones"></i><span id="texto_quantidade_palavras">0</span> palavras</li>
+        </ul>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-primary" hidden id="reiniciar">
+          Reiniciar Jogo
+        </button>
+        </div>
+        <table class="table table-row">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody id="ranking">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
